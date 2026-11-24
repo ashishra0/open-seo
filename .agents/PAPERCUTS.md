@@ -10,6 +10,8 @@ data, or sensitive paths.
 
 ## Open
 
+- [ ] `2026-11-24T06:20:49Z` — `claude` — `pnpm deploy:selfhost` preflight and the pinned alchemy beta.61 read only `~/.alchemy/profiles.json`; running `alchemy login` from any project on a newer alchemy (beta.87) migrates it to `~/.alchemy/profiles/<name>/` and the deploy then reports "No Cloudflare login found" despite a fresh login. Smallest fix: say in the preflight error and SELF_HOSTING_CLOUDFLARE.md to log in with `./node_modules/.bin/alchemy login ... --profile openseo` and `ALCHEMY_PROFILE=openseo`.
+
 - [ ] `2026-10-19T19:28:32Z` — `codex` — `pnpm cf-typegen` regenerates thousands of unrelated runtime types and changes `Env` inheritance, breaking existing Workflow fixtures and ambient bindings. Split binding generation from runtime updates so a new binding can be generated without an unrelated type migration; meanwhile declare new bindings in `src/env.d.ts`.
 
 - [ ] `2026-10-06T04:32:17Z` — `claude` — `npm --prefix web run types:check` (the web-content skill's final check) fails on a fresh worktree with only `web/` deps installed: `web/tsconfig.json` includes `**/*.ts`, so it type-checks `web/tests/free-tool-verification.spec.ts`, which imports the root-only `@playwright/test` and reports TS2307 plus a dozen implicit-any errors unrelated to the change. Add `@playwright/test` to `web` devDependencies or exclude that spec from `web/tsconfig.json`.
