@@ -47,6 +47,17 @@ So the order is: earn links, push the pages already showing in GSC at positions 
 | 16 | Rewrite titles and meta descriptions for pages with impressions but CTR under 1% |
 | 17 | Save a "30-day check-in" report (`seo-report`) and compare it with the baseline report `303a16c5…` |
 
+## Weekly targets
+
+Rankings lag work by 2–6 weeks, so weeks 1–3 are judged on output and leading signals; week 4 on outcomes.
+
+| Week (ends) | Target | Checked with |
+| --- | --- | --- |
+| 1 (Dec 1) | `purchase` fires on a paid conversion; both sitemaps in GSC; quick-win list of 5–10 pages at positions 8–30 with new titles/meta shipped | GA4 key events, GSC Sitemaps, project context |
+| 2 (Dec 8) | 10 directory/marketplace profiles live; 10 listicle pitches sent; 5 helpful community answers; referring domains 7 → 12+ | `get_backlinks_overview`, outreach list |
+| 3 (Dec 15) | 4–6 new pages live (Freshdesk alternatives, Apollo pricing, Apollo/ZoomInfo/Lusha alternatives, Help Scout/Chatbase pricing); internal links added; referring domains 18+; new pages indexed | `inspect_urls`, backlinks overview |
+| 4 (Dec 22) | Outcomes below; rank tracker approved and running; 30-day report saved | GSC performance, GA4 organic, report |
+
 ## Targets for 2026-12-24
 
 - Organic clicks per 28 days up from 19 to 100+; avg position on compare pages under 30.
@@ -56,6 +67,6 @@ So the order is: earn links, push the pages already showing in GSC at positions 
 
 ## Not now
 
-- AI visibility tracking: it needs Workers Paid on this deployment and has a recurring DataForSEO cost. Revisit once the site is indexed and ranking.
+- AI visibility tracking: it needs Workers Paid on this deployment and has a recurring DataForSEO cost. Revisit once compare pages reach page 1–2.
 - Long-tail blog content: no authority to rank it yet.
 - More free tools: most existing tool names have no measurable volume. Improve and promote the 4 that do.
